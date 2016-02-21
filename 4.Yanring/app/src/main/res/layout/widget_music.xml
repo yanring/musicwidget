@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:src="@drawable/icon"
+        />
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_width="149dp"
+        android:layout_height="85dp"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical|top"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_rowSpan="1"
+        android:layout_columnSpan="4"/>
+
+    <ImageButton
+        android:id="@+id/LastOne"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="1"
+
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/button_prev"/>
+
+    <ImageButton
+        android:id="@+id/start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:src="@mipmap/button_play"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        android:contextClickable="false"/>
+
+    <ImageButton
+        android:id="@+id/NextOne"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal|left"
+        android:src="@mipmap/button_next"/>
+
+</GridLayout>
